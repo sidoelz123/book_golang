@@ -18,24 +18,24 @@ sistem ini memiliki 3 tabel :
 
 ## menjalankan aplikasi
 
-<ul>
+<ol>
 <li>git clone https://github.com/sidoelz123/book_golang </li>
 <li>cd book_golang</li>
 <li>edit .env</li>
 <li>go mod tidy</li>
 <li>go run main.go</li>
-</ul>
+</ol>
 
 ## menjalankan aplikasi dengan docker
 
-<ul>
+<ol>
 <li>git clone https://github.com/sidoelz123/book_golang </li>
 <li>cd book_golang</li>
 <li>edit .env</li>
 <li>docker compose up -d --build</li>
-</ul>
+</ol>
 
-## Endpoint User
+## Endpoint Login
 
 Endpoint Login digunakan untuk autentikasi pengguna dan mendapatkan token JWT.
 
