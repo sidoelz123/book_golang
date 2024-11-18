@@ -35,7 +35,7 @@ sistem ini memiliki 3 tabel :
 <li>docker compose up -d --build</li>
 </ul>
 
-## Endpoint Login
+## Endpoint User
 
 Endpoint Login digunakan untuk autentikasi pengguna dan mendapatkan token JWT.
 
@@ -51,19 +51,18 @@ Method | Path | Keterangan | Auth | Body Request
 
 Method | Path | Keterangan | Auth | Body Request  
 ------------- | ------------- | ------------- | ------------- | -------------  
-***GET*** | *`{base_url}/books`* | Mendapatkan daftar semua buku | Yes | -  
-***POST*** | *`{base_url}/books`* | Menambahkan buku baru | Yes | `{ "title": "string", "description": "string", "image_url": "string", "release_year": "int, "price": 280000, "total_page": 90, "category_id": 3 }`  
-***GET*** | *`{base_url}/books/:id`* | Mendapatkan detail buku berdasarkan ID | Yes | -  
-***PUT*** | *`{base_url}/books/:id`* | Memperbarui buku berdasarkan ID | Yes | `{ "title": "string", "description": "string", "image_url": "string", "release_year": "int, "price": 280000, "total_page": 90, "category_id": 3 }`  
-***DELETE*** | *`{base_url}/books/:id`* | Menghapus buku berdasarkan ID | Yes | -  
+***GET*** | *`{base_url}/book`* | Mendapatkan daftar semua buku | Yes | -  
+***POST*** | *`{base_url}/book`* | Menambahkan buku baru | Yes | `{ "title": "string", "description": "string", "image_url": "string", "release_year": "int, "price": 280000, "total_page": 90, "category_id": 3 }`  
+***GET*** | *`{base_url}/book/:id`* | Mendapatkan detail buku berdasarkan ID | Yes | -  
+***PUT*** | *`{base_url}/book/:id`* | Memperbarui buku berdasarkan ID | Yes | `{ "title": "string", "description": "string", "image_url": "string", "release_year": "int, "price": 280000, "total_page": 90, "category_id": 3 }`  
+***DELETE*** | *`{base_url}/book/:id`* | Menghapus buku berdasarkan ID | Yes | -  
   
 ### Kategori
 
 Method | Path | Keterangan | Auth | Body Request  
 ------------- | ------------- | ------------- | ------------- | -------------  
-***POST*** | *`{base_url}/categories`* | Menambahkan kategori baru | Yes | `{ "id": 7, "name": "string", "created_by": "string", "modified_by": "string" }`  
-***GET*** | *`{base_url}/categories`* | Mendapatkan daftar semua kategori | Yes | -  
-***GET*** | *`{base_url}/categories/:id`* | Mendapatkan detail kategori berdasarkan ID | Yes | -  
-***PUT*** | *`{base_url}/categories/:id`* | Memperbarui detail kategori berdasarkan ID | Yes | `{ "name": "string", "created_by": "string", "modified_by": "string" }`  
-***DELETE*** | *`{base_url}/categories/:id`* | Menghapus kategori dari sistem berdasarkan ID | Yes | -  
-***GET*** | *`{base_url}/category/:id/books`* | Mendapatkan detail buku berdasarkan kategori | Yes | -
+***POST*** | *`{base_url}/category`* | Menambahkan kategori baru | Yes | `{ "id": 7, "name": "string", "created_by": "string", "modified_by": "string" }`  
+***GET*** | *`{base_url}/category`* | Mendapatkan daftar semua kategori | Yes | -  
+***GET*** | *`{base_url}/category/:id`* | Mendapatkan detail kategori berdasarkan ID | Yes | -  
+***PUT*** | *`{base_url}/category/:id`* | Memperbarui detail kategori berdasarkan ID | Yes | `{ "name": "string", "created_by": "string", "modified_by": "string" }`  
+***DELETE*** | *`{base_url}/category/:id`* | Menghapus kategori dari sistem berdasarkan ID | Yes | -  
